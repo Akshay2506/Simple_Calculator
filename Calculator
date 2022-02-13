@@ -1,0 +1,31 @@
+let result=0;
+function calculator(num1,num2,operation)
+{
+    switch(operation)
+    {
+        case '+':
+            result=num1+num2;
+            console.log(result);
+            break;
+        case '-':
+            result=num1-num2;
+            console.log(result);
+            break;
+        case '*':
+            result=num1*num2;
+            console.log(result);
+            break;
+        case "/":
+            result=num1/num2;
+            console.log(result.toFixed(2));
+            break;
+        default:console.log("Enter the correct operator");
+    }
+}
+calculator(4,5,'+');
+calculator(3867,9347,"+");
+calculator(9,3,"/");
+calculator(3,9,"/");
+calculator(56,89,"*");
+calculator(-5,5,"-");
+calculator(56,89,"-");
